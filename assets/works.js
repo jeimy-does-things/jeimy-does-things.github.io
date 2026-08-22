@@ -35,7 +35,7 @@ const WORKS = [
     type: "pdf",
     href: "pdf-viewer.html?src=papers/Cleaned version braided essay-4.pdf&title=Braided essay and ladders of abstraction.",
     more: "The disadvantage to working with really complicated scientific topics in a majorly humanistic class, is that after a while, you feel ripped apart from the capacity to express a non-objective, and creatively portrayed point of view. This time around, I brought the stories of the civilian and political forces of my homeland to make an intuitive, abstract, yet digestible story. I can't think of not having made this. The world doesn't change at expressing an opinion, at citing sources and making a narrative. But if it reaches the ears of only one more person, then the brass scale of justice is shifted by the weight of their actions posterior to reading. That is, the purpose of having written a topic so hard hitting is self-contained in the topic.",
-    more2: "This time around, the ladder of abstractions were helpful, I believe them to be what a proof by exhaustion is to math: a portrayal of the possible paths that there is to take in the interpretation of object B into object A."
+    more2: "In time around, the ladder of abstractions were helpful, I believe them to be what a proof by exhaustion is to math: a portrayal of the possible paths that there is to take in the interpretation of object B into object A. Furthermore, the mistakes I made from my initial research and braided essay were slowly becoming strengths, giving me the capacity to localize my language and to codeswitch at times where needed."
   },
   {
     title: "Custom map of places and communities",
@@ -46,7 +46,7 @@ const WORKS = [
     tag: "Map, places, communnities",
     type: "pdf",
     href: "pdf-viewer.html?src=papers/pdf.pdf&title=Map of varied places",
-    more: "When working on the phot essay, the hardest part was deciding exactly where I was going to talk about. I get the constant feeling that there are things too shallow which would make unconventionally great stories if ever spoken by the right voice: so the map isn't but a concoction of simple things like eating and working spaces, as well as places where I've gotten picked up by friends.",
+    more: "After having done the braided essay, we jumped into the territory of community counternarratives and photo essays. When working on the phot essay, the hardest part was deciding exactly where I was going to talk about. I get the constant feeling that there are things too shallow which would make unconventionally great stories if ever spoken by the right voice: so the map isn't but a concoction of simple things like eating and working spaces, as well as places where I've gotten picked up by friends.",
     more2: "Sometimes, making a map is a helpful advance in creative writing; some of my favorite novels wouldn't have existed if it weren't for cartography coming to help wherever travel wouldn't. So it is recommended that a reader does the attempt."
   },
   {
