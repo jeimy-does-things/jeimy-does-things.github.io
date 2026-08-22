@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Viewing PDF — ENGL 109H Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-mark" href="index.html"><strong>ENGL 109H</strong> · Portfolio</a>
+    <nav class="site-nav">
+      <a href="index.html">All works</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap pdf-toolbar">
+  <h1 id="pdf-title">Loading…</h1>
+  <a class="btn" id="pdf-download" href="#" download>
+    <span>Download</span>
+    <span class="arrow" aria-hidden="true">↓</span>
+  </a>
+</div>
+
+<div class="pdf-shell">
+  <div class="pdf-frame-wrap" id="pdf-frame-wrap">
+    <p class="pdf-fallback" id="pdf-fallback" hidden>
+      No PDF was specified. Link to this page as
+      <code>pdf-viewer.html?src=papers/your-file.pdf&amp;title=Your%20Title</code>.
+    </p>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const src = params.get("src");
+    const title = params.get("title") || "Untitled";
+
+    document.title = title + " — ENGL 109H Portfolio";
+    document.getElementById("pdf-title").textContent = title;
+
+    const wrap = document.getElementById("pdf-frame-wrap");
+    const downloadBtn = document.getElementById("pdf-download");
+
+    if (src) {
+      const iframe = document.createElement("iframe");
+      iframe.src = src;
+      iframe.title = title;
+      wrap.appendChild(iframe);
+      downloadBtn.href = src;
+    } else {
+      document.getElementById("pdf-fallback").hidden = false;
+      downloadBtn.style.display = "none";
+    }
+  })();
+</script>
+
+</body>
+</html>
